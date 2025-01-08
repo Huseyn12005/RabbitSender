@@ -10,7 +10,7 @@ const Sender = () => {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:5176/send", { message }); // Updated port to 5176
+      const response = await axios.post("http://localhost:5176/send", { message });
       console.log("Backend Response:", response.data);
       alert("Message sent successfully!");
       setMessage("");
